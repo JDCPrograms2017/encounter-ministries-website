@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encounter Ministries Church | Welcome Home</title>
+    
+    <!-- Tailwind CSS (built with PostCSS) -->
+    <link rel="stylesheet" href="assets/css/generated_output.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Applying the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for active nav link */
+        .nav-link-active {
+            color: #3b82f6; /* Example active color */
+            font-weight: 600;
+        }
+        /* Style for the modal */
+        #ai-modal-content ol {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+        }
+        #ai-modal-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo / Church Name -->
+                <a href="#" class="text-2xl font-bold text-gray-900">
+                    Encounter Ministries
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#new" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">I'm New</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">About Us</a>
+                    <a href="#sermons" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Sermons</a>
+                    <a href="#events" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Events</a>
+                    <a href="#giving" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-md">Giving</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#new" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">I'm New</a>
+            <a href="#about" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#sermons" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Sermons</a>
+            <a href="#events" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Events</a>
+            <a href="#giving" class="block py-3 px-6 text-blue-500 font-semibold hover:bg-gray-100">Giving</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Section -->
+        <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://placehold.co/1920x1080/a0aec0/ffffff?text=Community+Photo&font=inter');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 text-center text-white p-8">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg">
+                    Welcome Home
+                </h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">
+                    Encounter God with us today!
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#new" class="bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg transform hover:scale-105">
+                        Plan a Visit
+                    </a>
+                    <a href="#sermons" class="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white/30 transition-all duration-300 shadow-lg transform hover:scale-105">
+                        Watch Online
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Welcome & Service Info -->
+        <section id="new" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Join Us This Sunday</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 text-lg mb-12">We can't wait to meet you. Whether you're new to the area or just exploring faith, you're welcome here.</p>
+                
+                <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                    <!-- Service Times -->
+                    <div class="text-center">
+                        <i data-lucide="clock" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-2">Service Times</h3>
+                        <p class="text-gray-600">Sundays at 10:00 AM</p>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="text-center">
+                         <i data-lucide="map-pin" class="w-12 h-12 text-blue-500 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-2">Our Location</h3>
+                        <p class="text-gray-600">123 Community Lane, Pullman, WA</p>
+                        <a href="#" class="text-blue-500 hover:underline">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: What to Expect -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What to Expect</h2>
+                     <p class="max-w-3xl mx-auto text-gray-600 text-lg">Your first visit should be a great one. Here’s a little of what you can expect.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Expectation Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <i data-lucide="music" class="w-10 h-10 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Engaging Worship</h3>
+                        <p class="text-gray-600">Our services feature contemporary worship music and a time of prayer.</p>
+                    </div>
+                    <!-- Expectation Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <i data-lucide="book-open-text" class="w-10 h-10 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Biblical Teaching</h3>
+                        <p class="text-gray-600">We explore God's Word in a way that is relevant to your life.</p>
+                    </div>
+                    <!-- Expectation Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <i data-lucide="smile" class="w-10 h-10 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Welcoming Community</h3>
+                        <p class="text-gray-600">We are a friendly community and dress is casual. Come as you are!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: About Us / Pastor -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://placehold.co/400x400/e2e8f0/4a5568?text=Pastor+Photo&font=inter" alt="Lead Pastor" class="rounded-full shadow-lg mx-auto">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">A Message from Pastor Jordan Lachance</h2>
+                        <p class="text-gray-600 text-lg mb-6">"Welcome to Encounter Ministries! Our dream is to be a church where people from all walks of life can experience God's love and find a community to call home. We believe in the power of the Gospel to transform lives and are passionate about serving our city. We hope you'll join us on this journey."</p>
+                        <a href="#" class="text-blue-500 font-semibold hover:underline">Learn More About Our Beliefs &rarr;</a>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Latest Sermon -->
+        <section id="sermons" class="py-16 md:py-24 bg-gray-900 text-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Watch Our Latest Sermon</h2>
+                 <p class="max-w-3xl mx-auto text-gray-300 text-lg mb-12">Catch up on our latest message and browse our archive of past series.</p>
+                 <div class="max-w-4xl mx-auto bg-black rounded-lg shadow-2xl overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/FQHYj245s84" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                 </div>
+                 <div class="mt-8">
+                     <h3 class="text-2xl font-semibold" id="sermon-title">Favor of God</h3>
+                     <p class="text-gray-400 mb-4" id="sermon-details">Speaker: Jordan Lachance | Date: June 22, 2025</p>
+                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg transform hover:scale-105">
+                            View All Sermons
+                        </a>
+                        <button id="summarize-sermon-btn" class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg transform hover:scale-105 flex items-center gap-2">
+                           ✨ Unpack The Message
+                        </button>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+
+        <!-- Section 6: Featured Events -->
+        <section id="events" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+                     <p class="max-w-3xl mx-auto text-gray-600 text-lg">There's always something happening. Find an event for you.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <img src="https://placehold.co/600x400/dbeafe/1e3a8a?text=Community+BBQ&font=inter" alt="Community BBQ" class="w-full h-48 object-cover">
+                         <div class="p-6">
+                             <p class="text-sm text-blue-500 font-semibold mb-1">JUL 12, 2025</p>
+                             <h3 class="text-xl font-bold mb-2">Annual Community BBQ</h3>
+                             <p class="text-gray-600 mb-4">Join us for a day of food, fun, and fellowship. All are welcome!</p>
+                             <a href="#" class="font-semibold text-blue-500 hover:underline">Learn More &rarr;</a>
+                         </div>
+                    </div>
+                    <!-- Event Card 2 -->
+                     <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <img src="https://placehold.co/600x400/d1fae5/065f46?text=Youth+Camp&font=inter" alt="Youth Camp" class="w-full h-48 object-cover">
+                         <div class="p-6">
+                             <p class="text-sm text-green-500 font-semibold mb-1">JUL 20-24, 2025</p>
+                             <h3 class="text-xl font-bold mb-2">Summer Youth Camp</h3>
+                             <p class="text-gray-600 mb-4">An unforgettable week of adventure and spiritual growth for students.</p>
+                             <a href="#" class="font-semibold text-green-500 hover:underline">Register Now &rarr;</a>
+                         </div>
+                    </div>
+                    <!-- Event Card 3 -->
+                     <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <img src="https://placehold.co/600x400/fee2e2/991b1b?text=Serve+Day&font=inter" alt="Serve Day" class="w-full h-48 object-cover">
+                         <div class="p-6">
+                             <p class="text-sm text-red-500 font-semibold mb-1">AUG 02, 2025</p>
+                             <h3 class="text-xl font-bold mb-2">City Serve Day</h3>
+                             <p class="text-gray-600 mb-4">Join us as we partner with local organizations to serve our community.</p>
+                             <a href="#" class="font-semibold text-red-500 hover:underline">Find a Project &rarr;</a>
+                         </div>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="#" class="bg-gray-800 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition-all duration-300 shadow-md">
+                        View Full Calendar
+                    </a>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Giving -->
+        <section id="giving" class="py-16 md:py-24 bg-[rgb(100,132,141)] text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Partner With Us</h2>
+                <p class="max-w-3xl mx-auto text-blue-100 text-lg mb-8">Your generosity allows us to continue our mission of sharing God's love with our community and the world.</p>
+                <a href="https://www.easytithe.com/encounterpullman" class="bg-white text-blue-600 px-10 py-4 rounded-full text-xl font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg transform hover:scale-105">
+                    Give Online
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[rgb(25,65,73)] text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Encounter Ministries</h3>
+                    <p class="text-gray-400">A community church located in Pullman, WA. We exist to help people find and follow Jesus.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="hover:text-white"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Column -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Navigate</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#new" class="hover:text-white hover:underline">I'm New</a></li>
+                        <li><a href="#about" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="#sermons" class="hover:text-white hover:underline">Sermons</a></li>
+                        <li><a href="#events" class="hover:text-white hover:underline">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect Column -->
+                 <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white hover:underline">Small Groups</a></li>
+                        <li><a href="#" class="hover:text-white hover:underline">Serve</a></li>
+                        <li><a href="#" class="hover:text-white hover:underline">Prayer Requests</a></li>
+                        <li><a href="#" class="hover:text-white hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+                    <p class="flex items-start mb-2">
+                        <i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                        <span>123 Community Lane<br>Pullman, WA 99163</span>
+                    </p>
+                    <p class="flex items-center mb-2">
+                        <i data-lucide="phone" class="w-5 h-5 mr-3 flex-shrink-0"></i>
+                        <span>(509) 555-1234</span>
+                    </p>
+                     <p class="flex items-center">
+                        <i data-lucide="mail" class="w-5 h-5 mr-3 flex-shrink-0"></i>
+                        <span>pastorjordan@encounterministries.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Encounter Ministries Church. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gemini AI Modal -->
+    <div id="ai-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8 relative transform transition-all duration-300 scale-95 opacity-0">
+            <button id="close-ai-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <div id="ai-modal-content" class="prose max-w-none">
+                <!-- Loading State -->
+                <div id="ai-loading-state" class="text-center">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto"></div>
+                    <p class="mt-4 text-lg text-gray-600">Unpacking the message...</p>
+                </div>
+                 <!-- Result State -->
+                 <div id="ai-result-state" class="hidden">
+                    <h2 class="text-2xl font-bold mb-2 text-gray-900">Sermon Insights ✨</h2>
+                    <p class="text-sm text-gray-500 mb-6">Generated by Gemini</p>
+                    <div id="sermon-summary"></div>
+                    <div id="sermon-questions"></div>
+                </div>
+                 <!-- Error State -->
+                 <div id="ai-error-state" class="hidden text-center">
+                     <i data-lucide="alert-triangle" class="w-12 h-12 text-red-500 mx-auto mb-4"></i>
+                    <h2 class="text-xl font-semibold text-red-700">Oops!</h2>
+                    <p class="text-gray-600 mt-2">Something went wrong while generating the summary. Please try again later.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Mobile Menu Logic ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- Gemini AI Sermon Summary Modal Logic ---
+        const summarizeBtn = document.getElementById('summarize-sermon-btn');
+        const aiModal = document.getElementById('ai-modal');
+        const aiModalContentContainer = aiModal.querySelector('.transform');
+        const closeAiModalBtn = document.getElementById('close-ai-modal');
+        
+        const loadingState = document.getElementById('ai-loading-state');
+        const resultState = document.getElementById('ai-result-state');
+        const errorState = document.getElementById('ai-error-state');
+        
+        const summaryEl = document.getElementById('sermon-summary');
+        const questionsEl = document.getElementById('sermon-questions');
+
+        // Function to open the modal
+        const openModal = () => {
+            aiModal.classList.remove('hidden');
+            aiModal.classList.add('flex');
+            // Animate in
+            setTimeout(() => {
+                aiModalContentContainer.classList.remove('scale-95', 'opacity-0');
+                aiModalContentContainer.classList.add('scale-100', 'opacity-100');
+            }, 50);
+        };
+
+        // Function to close the modal
+        const closeModal = () => {
+            // Animate out
+            aiModalContentContainer.classList.add('scale-95', 'opacity-0');
+            aiModalContentContainer.classList.remove('scale-100', 'opacity-100');
+            setTimeout(() => {
+                aiModal.classList.add('hidden');
+                aiModal.classList.remove('flex');
+            }, 300);
+        };
+        
+        closeAiModalBtn.addEventListener('click', closeModal);
+        // Also close modal on background click
+        aiModal.addEventListener('click', (event) => {
+            if (event.target === aiModal) {
+                closeModal();
+            }
+        });
+
+
+        // Event listener for the "Unpack The Message" button
+        summarizeBtn.addEventListener('click', async () => {
+            // 1. Open the modal and show loading state
+            openModal();
+            loadingState.classList.remove('hidden');
+            resultState.classList.add('hidden');
+            errorState.classList.add('hidden');
+
+            // 2. Get sermon info from the DOM
+            const sermonTitle = document.getElementById('sermon-title').innerText;
+            const sermonDetails = document.getElementById('sermon-details').innerText;
+            
+            // 3. Construct the prompt for the Gemini API
+            const prompt = `You are a helpful assistant for a church website. Your task is to provide insights on a sermon. 
+            Based on the sermon titled "${sermonTitle}" with details "${sermonDetails}", please do the following:
+            1.  Write a brief, inspiring summary of the key message.
+            2.  Create 3-4 thought-provoking discussion questions suitable for a small group or personal reflection.`;
+
+            // 4. Prepare the payload for the Gemini API
+            const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { 
+                contents: chatHistory,
+                generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                        type: "OBJECT",
+                        properties: {
+                            summary: { type: "STRING" },
+                            questions: { 
+                                type: "ARRAY",
+                                items: { type: "STRING" }
+                            }
+                        },
+                        required: ["summary", "questions"]
+                    }
+                }
+            };
+
+            const apiKey = ""; // API key is handled by the environment
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                // 5. Make the fetch call to the Gemini API
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API call failed with status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    
+                    const jsonText = result.candidates[0].content.parts[0].text;
+                    const data = JSON.parse(jsonText);
+
+                    // 6. Populate the modal with the AI-generated content
+                    summaryEl.innerHTML = `<h3>Summary</h3><p>${data.summary}</p>`;
+                    
+                    let questionsHtml = '<h3>Discussion Questions</h3><ol>';
+                    data.questions.forEach(q => {
+                        questionsHtml += `<li class="mb-2">${q}</li>`;
+                    });
+                    questionsHtml += '</ol>';
+                    questionsEl.innerHTML = questionsHtml;
+
+                    // 7. Show the results and hide loading
+                    loadingState.classList.add('hidden');
+                    resultState.classList.remove('hidden');
+
+                } else {
+                     throw new Error("No content received from API.");
+                }
+
+            } catch (error) {
+                console.error("Error fetching from Gemini API:", error);
+                // Show error state in the modal
+                loadingState.classList.add('hidden');
+                errorState.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
